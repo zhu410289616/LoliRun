@@ -4,6 +4,8 @@
 #include "GameMenuLayer.h"
 #include "SimpleAudioEngine.h"
 
+#include "TestBackgroundScene.h"
+#include "TestHRockerScene.h"
 
 USING_NS_CC;
 using namespace CocosDenshion;
@@ -34,7 +36,10 @@ bool AppDelegate::applicationDidFinishLaunching() {
     
     // create a scene. it's an autorelease object
 //    CCScene *pScene = HelloWorld::scene();
-    CCScene *pScene = GameMenuLayer::scene();
+//    CCScene *pScene = GameMenuLayer::scene();
+    
+//    CCScene *pScene = TestBackgroundScene::scene();
+    CCScene *pScene = TestHRockerScene::scene();
 
     // run
     pDirector->runWithScene(pScene);

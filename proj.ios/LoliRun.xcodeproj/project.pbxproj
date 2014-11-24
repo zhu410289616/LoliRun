@@ -183,7 +183,10 @@
 		16C4E5BB1A1CCCAF000D8E4D /* sound-on-B.png in Resources */ = {isa = PBXBuildFile; fileRef = 16C4E5901A1CCCAF000D8E4D /* sound-on-B.png */; };
 		16C4E5BC1A1CCCAF000D8E4D /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 16C4E5911A1CCCAF000D8E4D /* star.png */; };
 		16C4E5BD1A1CCCAF000D8E4D /* tb.png in Resources */ = {isa = PBXBuildFile; fileRef = 16C4E5921A1CCCAF000D8E4D /* tb.png */; };
+		16C94C331A1F1A4B00B8C5EF /* TestBackgroundScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16C94C311A1F1A4B00B8C5EF /* TestBackgroundScene.cpp */; };
 		16CAC3B71A1D8F740083CA7B /* GameCommonUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16CAC3B51A1D8F740083CA7B /* GameCommonUtility.cpp */; };
+		16DC07FA1A22D329003150FB /* HRocker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16DC07F81A22D329003150FB /* HRocker.cpp */; };
+		16DC07FD1A22D76F003150FB /* TestHRockerScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16DC07FB1A22D76F003150FB /* TestHRockerScene.cpp */; };
 		1A27573F1697CF2B00504026 /* CCEditBoxImplAndroid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A27573D1697CF2B00504026 /* CCEditBoxImplAndroid.cpp */; };
 		1A8F3B6E175E05DA00049216 /* Animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A8F3B43175E05DA00049216 /* Animation.cpp */; };
 		1A8F3B6F175E05DA00049216 /* AnimationState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A8F3B45175E05DA00049216 /* AnimationState.cpp */; };
@@ -629,8 +632,14 @@
 		16C4E5901A1CCCAF000D8E4D /* sound-on-B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sound-on-B.png"; sourceTree = "<group>"; };
 		16C4E5911A1CCCAF000D8E4D /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		16C4E5921A1CCCAF000D8E4D /* tb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tb.png; sourceTree = "<group>"; };
+		16C94C311A1F1A4B00B8C5EF /* TestBackgroundScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestBackgroundScene.cpp; sourceTree = "<group>"; };
+		16C94C321A1F1A4B00B8C5EF /* TestBackgroundScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBackgroundScene.h; sourceTree = "<group>"; };
 		16CAC3B51A1D8F740083CA7B /* GameCommonUtility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameCommonUtility.cpp; path = ../Classes/GameCommonUtility.cpp; sourceTree = "<group>"; };
 		16CAC3B61A1D8F740083CA7B /* GameCommonUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameCommonUtility.h; path = ../Classes/GameCommonUtility.h; sourceTree = "<group>"; };
+		16DC07F81A22D329003150FB /* HRocker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HRocker.cpp; path = ../Classes/HRocker.cpp; sourceTree = "<group>"; };
+		16DC07F91A22D329003150FB /* HRocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRocker.h; path = ../Classes/HRocker.h; sourceTree = "<group>"; };
+		16DC07FB1A22D76F003150FB /* TestHRockerScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestHRockerScene.cpp; sourceTree = "<group>"; };
+		16DC07FC1A22D76F003150FB /* TestHRockerScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHRockerScene.h; sourceTree = "<group>"; };
 		1A27573D1697CF2B00504026 /* CCEditBoxImplAndroid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCEditBoxImplAndroid.cpp; sourceTree = "<group>"; };
 		1A27573E1697CF2B00504026 /* CCEditBoxImplAndroid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCEditBoxImplAndroid.h; sourceTree = "<group>"; };
 		1A8F3B43175E05DA00049216 /* Animation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Animation.cpp; sourceTree = "<group>"; };
@@ -1359,6 +1368,9 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				16DC07F81A22D329003150FB /* HRocker.cpp */,
+				16DC07F91A22D329003150FB /* HRocker.h */,
+				16C94C301A1F1A1D00B8C5EF /* Test */,
 				1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */,
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 				1AFAF8B516D35DE700DB1158 /* HelloWorldScene.cpp */,
@@ -1383,6 +1395,18 @@
 			);
 			name = Classes;
 			path = ../classes;
+			sourceTree = "<group>";
+		};
+		16C94C301A1F1A1D00B8C5EF /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				16C94C311A1F1A4B00B8C5EF /* TestBackgroundScene.cpp */,
+				16C94C321A1F1A4B00B8C5EF /* TestBackgroundScene.h */,
+				16DC07FB1A22D76F003150FB /* TestHRockerScene.cpp */,
+				16DC07FC1A22D76F003150FB /* TestHRockerScene.h */,
+			);
+			name = Test;
+			path = ../Classes/Test;
 			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -2025,6 +2049,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16C94C331A1F1A4B00B8C5EF /* TestBackgroundScene.cpp in Sources */,
 				15A3D8FF1682F7D5002FB0C5 /* b2BroadPhase.cpp in Sources */,
 				15A3D9001682F7D5002FB0C5 /* b2CollideCircle.cpp in Sources */,
 				15A3D9011682F7D5002FB0C5 /* b2CollideEdge.cpp in Sources */,
@@ -2033,6 +2058,7 @@
 				15A3D9041682F7D5002FB0C5 /* b2Distance.cpp in Sources */,
 				15A3D9051682F7D5002FB0C5 /* b2DynamicTree.cpp in Sources */,
 				15A3D9061682F7D5002FB0C5 /* b2TimeOfImpact.cpp in Sources */,
+				16DC07FD1A22D76F003150FB /* TestHRockerScene.cpp in Sources */,
 				15A3D9071682F7D5002FB0C5 /* b2ChainShape.cpp in Sources */,
 				15A3D9081682F7D5002FB0C5 /* b2CircleShape.cpp in Sources */,
 				15A3D9091682F7D5002FB0C5 /* b2EdgeShape.cpp in Sources */,
@@ -2233,6 +2259,7 @@
 				375BD50E1868454E0024609E /* CCActionEaseEx.cpp in Sources */,
 				379BB9C117F03F3700829B88 /* UICheckBox.cpp in Sources */,
 				379BB9C217F03F3700829B88 /* UIImageView.cpp in Sources */,
+				16DC07FA1A22D329003150FB /* HRocker.cpp in Sources */,
 				379BB9C317F03F3700829B88 /* UILabel.cpp in Sources */,
 				379BB9C417F03F3700829B88 /* UILabelAtlas.cpp in Sources */,
 				379BB9C517F03F3700829B88 /* UILabelBMFont.cpp in Sources */,
